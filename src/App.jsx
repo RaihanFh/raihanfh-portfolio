@@ -3,7 +3,15 @@ import "./css/App.css";
 import ExperienceCard from "./components/ExperienceCard";
 import MeCard from "./components/MeCard";
 import ProjectCard from "./components/ProjectCard";
+import SectionTitle from "./components/SectionTitle";
+import EducationCard from "./components/EducationCard";
+import ActivityCard from "./components/ActivityCard";
+import SkillGroup from "./components/SkillGroup";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 import { experience } from "./data/experience";
+import { education } from "./data/education";
+import { activities } from "./data/activities";
 import { projects } from "./data/projects";
 import { skills } from "./data/skills";
 
@@ -12,22 +20,19 @@ function App() {
     <div className="portfolio-app">
       <Header />
 
-      {/* Home / Summary Section */}
       <section id="home" className="section home-section">
         <MeCard />
       </section>
 
-      {/* Experience Section */}
       <section id="experience" className="section">
-        <h2>Experience</h2>
+        <SectionTitle>Experience</SectionTitle>
         {experience.map((item, index) => (
           <ExperienceCard key={index} experience={item} />
         ))}
       </section>
 
-      {/* Projects Section */}
       <section id="projects" className="section">
-        <h2>Projects</h2>
+        <SectionTitle>Projects</SectionTitle>
         <div className="projects-container">
           {projects.map((project, index) => (
             <ProjectCard
@@ -39,31 +44,30 @@ function App() {
         </div>
       </section>
 
-      {/* Skills Section */}
       <section id="skills" className="section">
-        <h2>Skills</h2>
+        <SectionTitle>Skills</SectionTitle>
         <div className="skills-groups">
           {skills.map((group, index) => (
-            <div key={index} className="skill-group">
-              <h3>{group.group}</h3>
-              <ul className="skills-list">
-                {group.items.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
-            </div>
+            <SkillGroup key={index} group={group} />
           ))}
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="section">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out for collaborations or opportunities!</p>
-        <a href="mailto:raihanfh305@gmail.com" className="contact-btn">
-          Email Me
-        </a>
+      <section id="education" className="section">
+        <SectionTitle>Education</SectionTitle>
+        {education.map((item, index) => (
+          <EducationCard key={index} education={item} />
+        ))}
+
+        <h3 className="sub-heading">Activities and Organizations</h3>
+        {activities.map((item, index) => (
+          <ActivityCard key={index} activity={item} />
+        ))}
       </section>
+
+      <ContactSection />
+
+      <Footer />
     </div>
   );
 }

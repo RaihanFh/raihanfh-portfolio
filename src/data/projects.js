@@ -2,6 +2,9 @@ import lakeside1 from "../assets/lakeside1.jpg";
 import lakeside2 from "../assets/lakeside2.jpg";
 import lakeside3 from "../assets/lakeside3.jpg";
 import chatbot from "../assets/chatbot.png";
+import calorieHome from "../assets/calorie-home.png";
+import calorieFoods from "../assets/calorie-foods.png";
+import calorieRecommendation from "../assets/calorie-recommendation.png";
 
 export const projects = [
   {
@@ -25,11 +28,11 @@ export const projects = [
   },
   {
     title: "Calorie Counter Application",
-    type: "other",
+    type: "mobile",
     description:
       "A calorie-tracking application that calculates BMI-based nutrition targets from user profile information and gives personalized daily calorie recommendations, instead of relying on a fixed calorie target.",
-    tags: [], // TODO(owner): add the real tech stack
-    images: null,
+    tags: ["Flutter", "Dart", "Firebase"], 
+    images: [calorieFoods, calorieHome, calorieRecommendation],
     link: null,
   },
 ];

@@ -482,12 +482,12 @@ Work in order. Tick each box when done. Commit at the end of each phase.
 
 ### Phase 3: Components
 
-- [ ] Create `SectionTitle`, `EducationCard`, `ActivityCard`, `SkillGroup`, `ContactSection`, `Footer`
-- [ ] Update `ExperienceCard` (location, Current badge, Show more / Show less)
-- [ ] Update `ProjectCard` (placeholder visual for `other`, normalized images, lazy loading, empty-tag handling)
-- [ ] Update `MeCard` (title line, Download CV, GitHub, LinkedIn buttons)
-- [ ] Update `Header` (semantic links, scroll-spy hook, 6 nav items, `shortName` from `profile`)
-- [ ] Wire everything in `App.jsx` in the order from Section 7.0
+- [x] Create `SectionTitle`, `EducationCard`, `ActivityCard`, `SkillGroup`, `ContactSection`, `Footer`
+- [x] Update `ExperienceCard` (location, Current badge, Show more / Show less)
+- [x] Update `ProjectCard` (placeholder visual for `other`, normalized images, lazy loading, empty-tag handling)
+- [x] Update `MeCard` (title line, Download CV, GitHub, LinkedIn buttons)
+- [x] Update `Header` (semantic links, scroll-spy hook, 6 nav items, `shortName` from `profile`)
+- [x] Wire everything in `App.jsx` in the order from Section 7.0
 
 **Verify:** `npm run lint && npm run build`. Manually check all six nav links.
 

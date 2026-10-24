@@ -1,10 +1,19 @@
+import { useState } from "react";
 import "../css/App.css";
 import {
   CalendarDaysIcon,
   BuildingOffice2Icon,
+  MapPinIcon,
 } from "@heroicons/react/24/outline";
 
+const INITIAL_COUNT = 3;
+
 function ExperienceCard({ experience }) {
+  const bullets = experience.desc ?? [];
+  const [expanded, setExpanded] = useState(false);
+  const hasMore = bullets.length > INITIAL_COUNT;
+  const visibleBullets = expanded ? bullets : bullets.slice(0, INITIAL_COUNT);
+
   return (
     <div className="card experience-card">
       <div className="card-header">
@@ -16,6 +25,9 @@ function ExperienceCard({ experience }) {
               <span>{experience.at}</span>
             </div>
           )}
+          {experience.endDate === "Present" && (
+            <span className="current-badge">Current</span>
+          )}
         </div>
 
         <div className="meta-details">
@@ -25,15 +37,31 @@ function ExperienceCard({ experience }) {
               {experience.startDate} – {experience.endDate}
             </span>
           </div>
+          {experience.location && (
+            <div className="meta-item">
+              <MapPinIcon className="icon-sm" />
+              <span>{experience.location}</span>
+            </div>
+          )}
         </div>
       </div>
 
       <div className="card-body">
         <ul className="bullet-list">
-          {experience.desc.map((bullet, index) => (
+          {visibleBullets.map((bullet, index) => (
             <li key={index}>{bullet}</li>
           ))}
         </ul>
+        {hasMore && (
+          <button
+            type="button"
+            className="show-more-btn"
+            aria-expanded={expanded}
+            onClick={() => setExpanded((v) => !v)}
+          >
+            {expanded ? "Show less" : "Show more"}
+          </button>
+        )}
       </div>
     </div>
   );
