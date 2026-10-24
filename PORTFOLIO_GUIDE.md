@@ -531,6 +531,13 @@ The agent must **not** fill these in itself. Keep the `TODO` markers in place, l
 | 8 | Optional: a case-study card for the ERP backend work (Altimeda). It is likely private or confidential code, so a description-only card with no link is an option. | Strongest experience has no project card | `projects.js` |
 | 9 | Optional: review the Fullstack Intern bullets. They are copied from the CV and are more about process than outcomes. Add concrete modules, features, or results as the internship progresses. | Stronger recruiter impact | `experience.js` |
 
+**Resolved since the guide was written:**
+
+- Item 1 (CV): file placed at `public/CV_Raihan_Fadhilah_Hafiizh.pdf`.
+- Item 6 (phone): shown publicly as a `tel:` link in the Contact section.
+- Item 4 (Calorie Counter): tech stack tags (`Flutter`, `Dart`, `Firebase`) and screenshots added by the owner.
+- Items 2 and 3 (GitHub project URLs): owner decided to leave them as `null` permanently.
+
 ---
 
 ## 11. Definition of Done

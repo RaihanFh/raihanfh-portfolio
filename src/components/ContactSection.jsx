@@ -1,4 +1,4 @@
-import { EnvelopeIcon, ArrowDownTrayIcon } from "@heroicons/react/24/outline";
+import { EnvelopeIcon, ArrowDownTrayIcon, DevicePhoneMobileIcon } from "@heroicons/react/24/outline";
 import { profile } from "../data/profile";
 
 function GitHubIcon({ className }) {
@@ -18,6 +18,8 @@ function LinkedInIcon({ className }) {
 }
 
 function ContactSection() {
+  const telHref = `tel:${profile.phone.replace(/[^0-9+]/g, "")}`;
+
   return (
     <section id="contact" className="section">
       <h2 className="section-title">Contact</h2>
@@ -27,6 +29,10 @@ function ContactSection() {
         <a href={`mailto:${profile.email}`} className="contact-btn">
           <EnvelopeIcon className="icon-sm" />
           Email
+        </a>
+        <a href={telHref} className="contact-btn contact-btn-secondary">
+          <DevicePhoneMobileIcon className="icon-sm" />
+          Phone
         </a>
         <a href={profile.github} target="_blank" rel="noreferrer" className="contact-btn contact-btn-secondary">
           <GitHubIcon className="icon-sm" />

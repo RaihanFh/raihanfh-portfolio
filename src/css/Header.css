@@ -93,31 +93,6 @@
   color: var(--surface);
 }
 
-/* Theme Toggle Button */
-.theme-toggle-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 9999px;
-  border: none;
-  background: transparent;
-  color: #374151;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  margin-left: 0.25rem;
-  flex-shrink: 0;
-}
-
-.theme-toggle-btn:hover {
-  background-color: rgba(0, 0, 0, 0.08);
-}
-
-.sun-icon {
-  width: 1.25rem;
-  height: 1.25rem;
-}
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 640px) {

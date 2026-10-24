@@ -127,21 +127,6 @@ body {
   margin-top: 1rem;
 }
 
-.skills-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  padding: 0;
-  list-style: none;
-}
-
-.skills-list li {
-  background: var(--surface);
-  padding: 1rem;
-  border-radius: 6px;
-  text-align: center;
-  border: 1px solid var(--border);
-}
 
 .contact-btn {
   display: inline-block;
@@ -518,7 +503,20 @@ body {
   font-size: 1rem;
   font-weight: 600;
   color: var(--accent);
+  margin: 0 0 0.5rem 0;
+}
+
+.location-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
   margin: 0 0 1rem 0;
+}
+
+.location-line .icon-sm {
+  color: var(--text-muted);
 }
 
 .button-row {

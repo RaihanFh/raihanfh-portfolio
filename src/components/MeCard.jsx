@@ -1,7 +1,7 @@
 import profilePhoto from "../assets/profile photo.jpeg";
 import "../css/App.css";
 import { profile } from "../data/profile";
-import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
+import { ArrowDownTrayIcon, MapPinIcon } from "@heroicons/react/24/outline";
 
 function GitHubIcon({ className }) {
   return (
@@ -53,6 +53,10 @@ function MeCard() {
           <div className="card-body">
             <h1>Hi, I'm {profile.name}</h1>
             <p className="title-line">{profile.title}</p>
+            <p className="location-line">
+              <MapPinIcon className="icon-sm" />
+              {profile.location}
+            </p>
             <p className="summary">
               {renderHighlighted(first, profile.highlight)}
             </p>
