@@ -462,11 +462,11 @@ Work in order. Tick each box when done. Commit at the end of each phase.
 
 ### Phase 1: Cleanup
 
-- [ ] Delete `src/components/rand`
-- [ ] Remove unused assets if unreferenced: `src/assets/react.svg`, `src/assets/vite.svg`, `src/assets/hero.png`, `public/icons.svg`
-- [ ] Remove dead CSS (`.quote-icon`) and the unused `React` import in `ProjectCard.jsx`
-- [ ] Fix the duplicate `id="home"` / nested section (Problem #2)
-- [ ] Update `index.html` title and meta tags (Section 7.9)
+- [x] Delete `src/components/rand`
+- [x] Remove unused assets if unreferenced: `src/assets/react.svg`, `src/assets/vite.svg`, `src/assets/hero.png`, `public/icons.svg`
+- [x] Remove dead CSS (`.quote-icon`) and the unused `React` import in `ProjectCard.jsx`
+- [x] Fix the duplicate `id="home"` / nested section (Problem #2)
+- [x] Update `index.html` title and meta tags (Section 7.9)
 
 **Verify:** `npm run lint && npm run build`
 

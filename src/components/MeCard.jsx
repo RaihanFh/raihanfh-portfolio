@@ -3,7 +3,7 @@ import "../css/App.css";
 
 function MeCard() {
   return (
-    <section id="home" className="section home-section">
+    <div className="section home-section">
       <blockquote className="profile-card">
         <img src={profilePhoto} alt="Raihan" className="card-photo-desktop" />
 
@@ -37,7 +37,7 @@ function MeCard() {
           </div>
         </article>
       </blockquote>
-    </section>
+    </div>
   );
 }
 

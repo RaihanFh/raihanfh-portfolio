@@ -1,5 +1,3 @@
-import React from "react";
-
 function ProjectCard({ project, reverse }) {
   const isMobile = project.type === "mobile";
 
