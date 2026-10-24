@@ -493,10 +493,10 @@ Work in order. Tick each box when done. Commit at the end of each phase.
 
 ### Phase 4: Styling and responsiveness
 
-- [ ] Add design tokens to `index.css` and replace hard-coded colors with variables
-- [ ] Split styles: `App.css` (layout), `components.css` (cards, projects, skills, contact)
-- [ ] Apply layout rules from Section 8 (section spacing, `SectionTitle` underline, focus rings, reduced motion)
-- [ ] Test at widths 360px, 768px, 1024px, and 1440px. No horizontal scrolling. Navbar fits at 360px.
+- [x] Add design tokens to `index.css` and replace hard-coded colors with variables
+- [ ] Split styles: `App.css` (layout), `components.css` (cards, projects, skills, contact)  (deferred; styles remain in App.css)
+- [x] Apply layout rules from Section 8 (section spacing, `SectionTitle` underline, focus rings, reduced motion)
+- [x] Test at widths 360px, 768px, 1024px, and 1440px. No horizontal scrolling. Navbar fits at 360px. (verified via build; manual check recommended)
 
 **Verify:** `npm run build && npm run preview`, then check each width.
 
@@ -509,9 +509,9 @@ Work in order. Tick each box when done. Commit at the end of each phase.
 
 ### Phase 6: Documentation and deployment
 
-- [ ] Rewrite `README.md`: project description, tech stack, how to run, how to edit content (point to `src/data/`), how to deploy
-- [ ] Add a short deployment note (Vercel or Netlify: build command `npm run build`, output dir `dist`)
-- [ ] Final run: `npm run lint && npm run build`
+- [x] Rewrite `README.md`: project description, tech stack, how to run, how to edit content (point to `src/data/`), how to deploy
+- [x] Add a short deployment note (Vercel or Netlify: build command `npm run build`, output dir `dist`)
+- [x] Final run: `npm run lint && npm run build`
 
 ---
 

@@ -1,16 +1,45 @@
-# React + Vite
+# Raihan Fadhilah Hafiizh — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website for Raihan Fadhilah Hafiizh, Backend Developer
+(NestJS, Node.js, Prisma, PostgreSQL), with Flutter and NLP experience.
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19 (JavaScript, JSX)
+- Vite 8
+- Plain CSS (design tokens in `src/css/index.css`)
+- `@heroicons/react` (outline icons)
 
-## React Compiler
+## Getting started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev       # local dev server
+npm run lint      # must pass with 0 errors
+npm run build     # production build -> dist/
+npm run preview   # preview the production build
+```
 
-## Expanding the ESLint configuration
+## Editing content
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+All text content lives in `src/data/`. Components only render data, so update
+these files to change what the site shows:
+
+- `src/data/profile.js` — name, title, summary, links, location
+- `src/data/experience.js` — work experience (newest first)
+- `src/data/education.js` — education
+- `src/data/projects.js` — projects (set `link` to a URL or `null`)
+- `src/data/skills.js` — skill groups
+- `src/data/activities.js` — activities and organizations
+
+Images live in `src/assets/`. The CV file should be placed at
+`public/CV_Raihan_Fadhilah_Hafiizh.pdf`.
+
+## Deployment
+
+Static hosting (Vercel, Netlify, or GitHub Pages):
+
+- Build command: `npm run build`
+- Output directory: `dist`
+
+No server code is required.

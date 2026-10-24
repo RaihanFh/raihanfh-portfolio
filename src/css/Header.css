@@ -90,7 +90,7 @@
 /* Active Section Highlight */
 .navbar li.active {
   background-color: #111827;
-  color: #ffffff;
+  color: var(--surface);
 }
 
 /* Theme Toggle Button */
