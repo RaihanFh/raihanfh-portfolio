@@ -472,11 +472,11 @@ Work in order. Tick each box when done. Commit at the end of each phase.
 
 ### Phase 2: Data layer
 
-- [ ] Create `src/data/*.js` files exactly per Section 6
-- [ ] Move experience and project data out of `App.jsx`; add the new Fullstack Intern entry, Calorie Counter project, Education, Activities, and the corrected Skills
-- [ ] Add `location` to the existing experience entries
-- [ ] Set placeholder project `link` values to `null`
-- [ ] `App.jsx` should now contain only imports, section wrappers, and `.map()` calls
+- [x] Create `src/data/*.js` files exactly per Section 6
+- [x] Move experience and project data out of `App.jsx`; add the new Fullstack Intern entry, Calorie Counter project, Education, Activities, and the corrected Skills
+- [x] Add `location` to the existing experience entries
+- [x] Set placeholder project `link` values to `null`
+- [x] `App.jsx` should now contain only imports, section wrappers, and `.map()` calls
 
 **Verify:** `npm run dev`. The page looks the same as before, plus the new data appears.
 
